@@ -12,8 +12,7 @@ fetch("config.json")
   .then((config) => {
     const secretKey = config.API_KEY;
     api_KEY = secretKey;
-  })
-  .catch((error) => console.error(error));
+  }).catch((error) => console.error(error));
 
 // Async function to fetch query
 async function fetchResults() {
